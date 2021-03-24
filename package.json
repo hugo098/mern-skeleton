@@ -1,0 +1,28 @@
+{
+  "name": "mern-skeleton",
+  "version": "1.0.0",
+  "description": "A MERN stack skeleton web application",
+  "main": "index.js",
+  "repository": "https://github.com/hugo098/mern-skeleton.git",
+  "author": "Hugo Rodriguez <hi.rodriguez1998@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "express",
+    "mongodb",
+    "node",
+    "mern"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "scripts": {
+    "development": "nodemon"
+  }
+}
