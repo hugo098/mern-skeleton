@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-
+import crypto from 'crypto'
 
 const UserSchema = new mongoose.Schema({
     name: {
@@ -50,6 +50,7 @@ UserSchema.methods = {
                 .update(password)
                 .digest('hex')
         } catch (err) {
+            console.log(err.message)            
             return ''
         }
     },
@@ -64,6 +65,7 @@ UserSchema.path('hashed_password').validate(function (v) {
     }
     if (this.isNew && !this._password) {
         this.invalidate('password', 'Password is required')
+        console.log("Here")
     }
 }, null)
 
