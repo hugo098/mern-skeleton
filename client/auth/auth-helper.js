@@ -1,3 +1,4 @@
+import { signout } from './api-auth.js'
 const auth = {
     authenticate(jwt, cb) {
         if (typeof window !== "undefined")
